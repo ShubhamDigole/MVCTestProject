@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+    <div>
+
+        <table>
+            @foreach (var country in ViewBag.countries)
+            {
+                <tr>
+                    <td> @country.name</td>
+                </tr>
+            }
+        </table>
+
+        <button asp-action="getData"></button>
+    </div>
+
+    
